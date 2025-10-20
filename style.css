@@ -150,8 +150,35 @@ body{
     font-weight: 600;
   }
   /* Subpage helpers */
-.hero--sub{ padding-top:88px; padding-bottom:48px; }
-.hero__subwrap{ text-align:center; max-width:760px; margin: 0 auto; }
+  .hero--sub {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 60vh;
+  }
+  
+  .hero__subwrap {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  
+  .hero--sub .lead {
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+    color: var(--graphite);
+  }
+  
+  .hero--sub .micro {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
 
 .grid-2{ display:grid; gap:1rem; grid-template-columns:1fr; }
 @media (min-width:900px){ .grid-2{ grid-template-columns:1fr 1fr; } }
@@ -162,20 +189,74 @@ body{
 .bullets{ margin-top:.75rem; padding-left:1.1rem; }
 .bullets li{ margin:.25rem 0; color:var(--graphite); }
 
-/* Score badge */
-.score-badge{ position:relative; width:120px; height:120px; margin-top:10px; }
-.score-ring{
-  position:absolute; inset:0; border-radius:999px;
-  background: conic-gradient(var(--coral) 0 330deg, #eee 330deg 360deg);
-  box-shadow: 0 10px 30px rgba(0,0,0,.06) inset;
-}
-.score-badge::before{
-  content:""; position:absolute; inset:10px; border-radius:999px; background:#fff; border:1px solid rgba(0,0,0,.06);
-}
-.score-num{
-  position:absolute; inset:0; display:grid; place-items:center; font-weight:800; font-size:1.6rem;
-}
-.score-label{ margin-top:130px; font-size:.85rem; color:var(--graphite); }
-
-.card--link{ text-decoration:none; color:inherit; }
-.card--link .card__meta{ color: var(--coral); font-weight:600; }
+/* ---------- Vibe Score Badge (revamped) ---------- */
+.score-badge {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 0;
+  }
+  
+  .score-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      var(--coral) 0deg,
+      var(--lilac) 150deg,
+      var(--blush) 280deg,
+      #eee 280deg 360deg
+    );
+    animation: spinGradient 6s linear infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 99, 132, 0.2));
+  }
+  
+  .score-badge::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    z-index: 2;
+  }
+  
+  .score-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 144, 167, 0.3), transparent 70%);
+    filter: blur(10px);
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+  
+  .score-num {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+    z-index: 3;
+  }
+  
+  .score-label {
+    text-align: center;
+    margin-top: 165px;
+    font-size: 0.9rem;
+    color: var(--graphite);
+    opacity: 0.9;
+  }
+  
+  /* subtle animations */
+  @keyframes spinGradient {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+  }
+  
