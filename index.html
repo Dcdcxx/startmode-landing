@@ -2,37 +2,198 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>StartMode — Where ideas meet influence</title>
+  <meta name="description" content="StartMode connects people with ideas to creators who build in public as true partners. Match, co-create, and launch." />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="StartMode — Where ideas meet influence" />
+  <meta property="og:description" content="Build in public with creators. Vibe-match, collaborate, launch." />
+  <meta property="og:image" content="og.jpg" />
+  <meta property="og:type" content="website" />
 </head>
+
 <body>
-  <header class="hero">
-    <h1><span class="highlight">StartMode</span></h1>
-    <p>Where ideas meet influence — build in public, together.</p>
-    <a href="#" class="cta">Join the Waitlist</a>
+  <!-- ========= NAV ========= -->
+  <header class="nav">
+    <div class="container nav__wrap">
+      <a href="#" class="logo">
+        startm<span class="o-glow" aria-hidden="true"></span>de
+      </a>
+      <nav class="nav__links">
+        <a href="#how">How it works</a>
+        <a href="#founders">Founding Partners</a>
+        <a href="#sneakpeek">Sneak Peek</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#join" class="btn btn--primary">Join the waitlist</a>
+    </div>
   </header>
 
-  <section class="features">
-    <h2>How it works</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Create your profile</h3>
-        <p>Define your goals and your vibe. We match you with creators who align with your energy.</p>
+  <!-- ========= HERO ========= -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1 class="h1">
+          Where <span class="text-gradient">ideas</span> meet influence — and launch.
+        </h1>
+        <p class="lead">
+          StartMode connects people with ideas to creators who become genuine partners.
+          Vibe-based matching, a shared studio, and a guided path from intro call to launch.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#join">Get early access</a>
+          <a class="btn btn--ghost" href="#how">See how it works</a>
+        </div>
+        <p class="micro">No subscriptions. Build in public. Own your outcomes.</p>
       </div>
-      <div class="card">
-        <h3>Match & Collaborate</h3>
-        <p>Our vibe engine pairs you with the right influencer to co-create and launch your idea.</p>
-      </div>
-      <div class="card">
-        <h3>Build in Public</h3>
-        <p>Share your journey, attract feedback, and grow your audience as you build together.</p>
+
+      <!-- Hero visual: vibe cards -->
+      <div class="hero__visual">
+        <div class="card">
+          <div class="card__title">Vibe Match</div>
+          <div class="vibe__demo">
+            <div class="vibe__ring"></div>
+          </div>
+          <div class="card__meta">91% Alignment</div>
+        </div>
+        <div class="card">
+          <div class="card__title">Intro Call</div>
+          <div class="placeholder-box"></div>
+          <div class="card__meta">Schedule in 2 clicks</div>
+        </div>
+        <div class="card card--wide">
+          <div class="card__title">Collaboration Hub</div>
+          <div class="placeholder-box"></div>
+          <div class="card__meta">Feed · Idea Board · Progress</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 StartMode — All Rights Reserved</p>
+  <!-- ========= HOW IT WORKS ========= -->
+  <section id="how" class="section">
+    <div class="container">
+      <h2 class="h2">How it works</h2>
+      <div class="grid-3">
+        <div class="tile">
+          <div class="dot"></div>
+          <h3 class="h3">Create your profile</h3>
+          <p>Define your goals, values, and aesthetic. We generate your Vibe Signature.</p>
+        </div>
+        <div class="tile">
+          <div class="dot"></div>
+          <h3 class="h3">Match & meet</h3>
+          <p>High-quality matches only. Confirm the fit with a platform-facilitated intro call.</p>
+        </div>
+        <div class="tile">
+          <div class="dot"></div>
+          <h3 class="h3">Co-create & launch</h3>
+          <p>Collaborate in one shared space — then share your journey publicly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= FOUNDING PARTNERS ========= -->
+  <section id="founders" class="section section--alt">
+    <div class="container">
+      <h2 class="h2">Founding Partners</h2>
+      <p class="subtle">We’re inviting a small group of creators and founders to shape StartMode.</p>
+      <div class="logos">
+        <div class="logo-box">Your logo here</div>
+        <div class="logo-box">Your logo here</div>
+        <div class="logo-box">Your logo here</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= SNEAK PEEK ========= -->
+  <section id="sneakpeek" class="section">
+    <div class="container">
+      <h2 class="h2">Sneak peek</h2>
+      <div class="peek-grid">
+        <div class="peek-card">
+          <div class="peek-img"></div>
+          <div class="peek-caption">Match Reveal</div>
+        </div>
+        <div class="peek-card">
+          <div class="peek-img"></div>
+          <div class="peek-caption">Collaboration Hub</div>
+        </div>
+        <div class="peek-card">
+          <div class="peek-img"></div>
+          <div class="peek-caption">Roadmap</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= FAQ (native details/summary) ========= -->
+  <section id="faq" class="section section--alt">
+    <div class="container">
+      <h2 class="h2">FAQ</h2>
+      <details class="faq">
+        <summary>How are matches made?</summary>
+        <p>Through a Vibe Score that blends values, tone, goals, and complementary strengths. We optimize for quality, not quantity.</p>
+      </details>
+      <details class="faq">
+        <summary>Do you charge subscriptions?</summary>
+        <p>No. We use one-off posting fees, milestone fees, and optional revenue-share/contract facilitation instead.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I build in public?</summary>
+        <p>Yes — share selected parts of your collaboration to attract feedback and audience energy.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ========= JOIN FORM ========= -->
+  <section id="join" class="section">
+    <div class="container form__wrap">
+      <div class="form__copy">
+        <h2 class="h2">Join the early access list</h2>
+        <p class="subtle">Get invited to closed beta and the Founding Partners program.</p>
+      </div>
+      <form class="form" action="https://formspree.io/f/your-id" method="POST">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>I am a…</span>
+          <select name="role">
+            <option>Creator / Influencer</option>
+            <option>Founder / Idea person</option>
+            <option>Agency / Partner</option>
+          </select>
+        </label>
+        <button class="btn btn--primary" type="submit">Request access</button>
+        <p class="micro subtle">We’ll never share your email. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <a href="#" class="logo">startm<span class="o-glow" aria-hidden="true"></span>de</a>
+      <div class="footer__links">
+        <a href="#how">How it works</a>
+        <a href="#founders">Founding Partners</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="micro subtle">© <span id="year"></span> StartMode · All rights reserved</div>
+    </div>
   </footer>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
