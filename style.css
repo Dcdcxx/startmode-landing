@@ -134,3 +134,19 @@ body{
 /* Scroll reveal */
 .reveal{ opacity:0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease; }
 .reveal.in{ opacity:1; transform: translateY(0); }
+
+/* Make clickable cards feel interactive */
+.card--link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform .18s ease, box-shadow .2s ease;
+  }
+  .card--link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(0,0,0,.08);
+  }
+  .card--link .card__meta {
+    color: var(--coral);
+    font-weight: 600;
+  }
+  
