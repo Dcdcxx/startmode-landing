@@ -4,8 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>StartMode — Where ideas meet influence</title>
-  <meta name="description" content="StartMode connects people with ideas to creators who build in public as true partners. Match, co-create, and launch." />
+  <meta name="description" content="StartMode connects people with ideas to creators who build in public as true partners. Vibe-match, co-create, and launch." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon / OG (optional; replace with your images when ready) -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="StartMode — Where ideas meet influence" />
   <meta property="og:description" content="Build in public with creators. Vibe-match, collaborate, launch." />
@@ -32,6 +41,12 @@
 
   <!-- ========= HERO ========= -->
   <section class="hero">
+    <div class="hero-bg">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+    </div>
+
     <div class="container hero__grid">
       <div class="hero__copy">
         <h1 class="h1">
@@ -45,7 +60,7 @@
           <a class="btn btn--primary" href="#join">Get early access</a>
           <a class="btn btn--ghost" href="#how">See how it works</a>
         </div>
-        <p class="micro">No subscriptions. Build in public. Own your outcomes.</p>
+        <p class="micro subtle">No subscriptions. Build in public. Own your outcomes.</p>
       </div>
 
       <!-- Hero visual: vibe cards -->
@@ -69,10 +84,17 @@
         </div>
       </div>
     </div>
+
+    <!-- wave divider -->
+    <div class="wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,64 C320,128 1120,0 1440,64 L1440,120 L0,120 Z" fill="#fff"></path>
+      </svg>
+    </div>
   </section>
 
   <!-- ========= HOW IT WORKS ========= -->
-  <section id="how" class="section">
+  <section id="how" class="section reveal">
     <div class="container">
       <h2 class="h2">How it works</h2>
       <div class="grid-3">
@@ -96,7 +118,7 @@
   </section>
 
   <!-- ========= FOUNDING PARTNERS ========= -->
-  <section id="founders" class="section section--alt">
+  <section id="founders" class="section section--alt reveal">
     <div class="container">
       <h2 class="h2">Founding Partners</h2>
       <p class="subtle">We’re inviting a small group of creators and founders to shape StartMode.</p>
@@ -109,7 +131,7 @@
   </section>
 
   <!-- ========= SNEAK PEEK ========= -->
-  <section id="sneakpeek" class="section">
+  <section id="sneakpeek" class="section reveal">
     <div class="container">
       <h2 class="h2">Sneak peek</h2>
       <div class="peek-grid">
@@ -129,8 +151,8 @@
     </div>
   </section>
 
-  <!-- ========= FAQ (native details/summary) ========= -->
-  <section id="faq" class="section section--alt">
+  <!-- ========= FAQ ========= -->
+  <section id="faq" class="section section--alt reveal">
     <div class="container">
       <h2 class="h2">FAQ</h2>
       <details class="faq">
@@ -148,8 +170,19 @@
     </div>
   </section>
 
+  <!-- ========= CTA BAND ========= -->
+  <section class="cta-band reveal">
+    <div class="container cta-band__wrap">
+      <div class="cta-band__text">
+        <h3>Ready to switch to <span class="logo-inline">startm<span class="o-glow tiny"></span>de</span>?</h3>
+        <p>Join the founding cohort. High-signal matching. Build in public.</p>
+      </div>
+      <a href="#join" class="btn btn--primary btn--lg">Request early access</a>
+    </div>
+  </section>
+
   <!-- ========= JOIN FORM ========= -->
-  <section id="join" class="section">
+  <section id="join" class="section reveal">
     <div class="container form__wrap">
       <div class="form__copy">
         <h2 class="h2">Join the early access list</h2>
@@ -191,9 +224,17 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script>
     // set year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // simple scroll reveal
+    const revealEls = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("in"); });
+    }, { threshold: 0.12 });
+    revealEls.forEach((el) => io.observe(el));
   </script>
 </body>
 </html>
