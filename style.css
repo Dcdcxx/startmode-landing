@@ -243,10 +243,10 @@ body{
   
   .score-label {
     text-align: center;
-    margin-top: 165px;
     font-size: 0.9rem;
     color: var(--graphite);
     opacity: 0.9;
+    margin-bottom: 10px;
   }
   
   /* subtle animations */
