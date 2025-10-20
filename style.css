@@ -373,3 +373,4 @@ body{
   #roadmap .media-frame,
   #files .media-frame { height: 160px; }
 }
+#feed .media-img { object-fit: contain; }
