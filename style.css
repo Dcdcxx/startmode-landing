@@ -359,4 +359,17 @@ body{
   }
   .grid-3{ display:grid; gap:1rem; grid-template-columns:1fr; }
   @media (min-width:900px){ .grid-3{ grid-template-columns:repeat(3,1fr); } }
-    
+
+  #feed .media-frame,
+#idea-board .media-frame,
+#progress .media-frame,
+#roadmap .media-frame,
+#files .media-frame { height: 200px; }
+
+@media (max-width: 600px){
+  #feed .media-frame,
+  #idea-board .media-frame,
+  #progress .media-frame,
+  #roadmap .media-frame,
+  #files .media-frame { height: 160px; }
+}
