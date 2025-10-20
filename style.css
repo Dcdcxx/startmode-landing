@@ -248,6 +248,16 @@ body{
     opacity: 0.9;
     margin-bottom: 10px;
   }
+  .card-img{
+    width:100%;
+    height:112px;         /* match your placeholder-box height */
+    border-radius:12px;
+    object-fit:cover;     /* crops nicely */
+    border:1px solid rgba(0,0,0,.10);
+    background:#fff;      /* fallback while loading */
+    display:block;
+  }
+  
   
   /* subtle animations */
   @keyframes spinGradient {
