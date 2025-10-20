@@ -1,0 +1,109 @@
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* --- BRAND COLORS --- */
+  :root {
+    --coral: #FF6F61;
+    --lilac: #C8A2C8;
+    --blush: #FCE8E8;
+    --warm: #FFFBF9;
+    --ink: #2B2B2B;
+    --gray: #6E6E6E;
+  }
+  
+  /* --- BASE --- */
+  body {
+    background: var(--warm);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  
+  /* --- HERO --- */
+  .hero {
+    text-align: center;
+    padding: 6rem 1rem;
+    background: linear-gradient(135deg, var(--coral), var(--lilac));
+    color: white;
+    border-radius: 0 0 50% 50% / 10%;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    letter-spacing: -1px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+  }
+  
+  .cta {
+    display: inline-block;
+    background: white;
+    color: var(--coral);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  .cta:hover {
+    background: var(--blush);
+  }
+  
+  /* --- FEATURES --- */
+  .features {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 280px;
+    transition: 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  }
+  
+  .card h3 {
+    color: var(--coral);
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    color: var(--gray);
+    font-size: 0.95rem;
+  }
+  
+  /* --- FOOTER --- */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--blush);
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+  
