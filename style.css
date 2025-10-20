@@ -374,3 +374,35 @@ body{
   #files .media-frame { height: 160px; }
 }
 #feed .media-img { object-fit: contain; }
+
+/* ======================================
+   Collaboration Hub Image Formatting
+   ====================================== */
+   #feed .media-frame,
+   #idea-board .media-frame,
+   #progress .media-frame,
+   #roadmap .media-frame,
+   #files .media-frame {
+     height: auto;                  /* adjust to fit image height naturally */
+     max-height: 500px;             /* prevent overly tall images */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #fff;
+     border-radius: 14px;
+     overflow: hidden;
+   }
+   
+   #feed .media-img,
+   #idea-board .media-img,
+   #progress .media-img,
+   #roadmap .media-img,
+   #files .media-img {
+     width: 100%;
+     height: auto;
+     object-fit: contain;           /* ensures full image visibility */
+     border-radius: 12px;
+     box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+     background: #fff;
+   }
+   
