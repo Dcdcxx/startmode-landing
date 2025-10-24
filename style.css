@@ -405,9 +405,17 @@ body{
      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
      background: #fff;
    }
-   .partnership_icon {
-    display: block;
-    margin: 1.5rem auto; /* centers the image */
-    width: 100px !important;
-    max-width: 30px !important
+   /* Partnerships icon — responsive but bounded */
+.partnerships-icon{
+    display:block;
+    margin: 1rem auto;
+    width: clamp(56px, 8vw, 96px); /* min 56px, scales up with viewport, max 96px */
+    height:auto;
+    object-fit:contain;
+    filter: drop-shadow(0 4px 8px rgba(255,140,120,.25));
+    transition: transform .3s ease;
   }
+  
+  /* optional hover polish */
+  .partnerships-icon:hover{ transform: scale(1.03); }
+  
