@@ -409,7 +409,7 @@ body{
 .partnership_icon{
     display:block;
     margin: 1rem auto;
-    width: clamp(56px, 8vw, 96px); /* min 56px, scales up with viewport, max 96px */
+    width: clamp(80px, 8vw, 100px); /* min 56px, scales up with viewport, max 96px */
     height:auto;
     object-fit:contain;
     filter: drop-shadow(0 4px 8px rgba(255,140,120,.25));
