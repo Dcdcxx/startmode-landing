@@ -408,6 +408,6 @@ body{
    .partnership_icon {
     display: block;
     margin: 1.5rem auto; /* centers the image */
-    width: 30px !important;
+    width: 80px !important;
     max-width: 30px !important
   }
