@@ -418,4 +418,26 @@ body{
   
   /* optional hover polish */
   .partnership_icon:hover{ transform: scale(1.03); }
+
+  /* Image logo sizing */
+.site-logo {
+    height: 40px;      /* tweak to taste */
+    width: auto;
+    display: block;
+  }
+  
+  /* Keep the .logo anchor tidy */
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  /* If the old glow span still exists anywhere, neutralize it */
+  .logo .o-glow { display: none; }
+  
+  @media (max-width: 768px) {
+    .site-logo { height: 32px; }
+  }
+  
   
