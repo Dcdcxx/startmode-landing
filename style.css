@@ -408,7 +408,7 @@ body{
    .partnerships-icon {
     display: block;
     margin: 1.5rem auto; /* centers the image */
-    width: 100px;
+    width: 30px;
     height: auto;
     filter: drop-shadow(0 4px 8px rgba(255, 140, 120, 0.25));
     transition: transform 0.3s ease;
