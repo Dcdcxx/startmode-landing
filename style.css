@@ -405,16 +405,9 @@ body{
      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
      background: #fff;
    }
-   .partnerships-icon {
+   .partnership_icon {
     display: block;
     margin: 1.5rem auto; /* centers the image */
-    width: 30px;
-    height: auto;
-    filter: drop-shadow(0 4px 8px rgba(255, 140, 120, 0.25));
-    transition: transform 0.3s ease;
+    width: 30px !important;
+    max-width: 30px !important
   }
-  
-  .partnerships-icon:hover {
-    transform: scale(1.05);
-  }
-  
