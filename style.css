@@ -406,7 +406,7 @@ body{
      background: #fff;
    }
    /* Partnerships icon — responsive but bounded */
-.partnerships-icon{
+.partnership_icon{
     display:block;
     margin: 1rem auto;
     width: clamp(56px, 8vw, 96px); /* min 56px, scales up with viewport, max 96px */
@@ -417,5 +417,5 @@ body{
   }
   
   /* optional hover polish */
-  .partnerships-icon:hover{ transform: scale(1.03); }
+  .partnership_icon:hover{ transform: scale(1.03); }
   
