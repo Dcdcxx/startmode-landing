@@ -138,7 +138,7 @@
         <h2 class="h2">Join the early access list</h2>
         <p class="subtle">Get invited to closed beta and the Founding Partners program.</p>
       </div>
-      <form class="form" action="https://formspree.io/f/your-id" method="POST">
+      <form class="form" action="https://formspree.io/f/mjkannnq" method="POST">
         <label>
           <span>Name</span>
           <input type="text" name="name" required />
@@ -185,5 +185,36 @@
     }, { threshold: 0.12 });
     revealEls.forEach((el) => io.observe(el));
   </script>
+  <script>
+    const form = document.querySelector('form.form');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting…';
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+          });
+          if (res.ok) {
+            form.reset();
+            submitBtn.textContent = 'Joined!';
+          } else {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Join Now';
+            alert('Something went wrong. Please try again.');
+          }
+        } catch (err) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Join Now';
+          alert('Network error. Please try again.');
+        }
+      });
+    }
+  </script>
+  
 </body>
 </html>
