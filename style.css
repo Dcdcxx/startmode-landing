@@ -27,7 +27,10 @@ body{
 .text-gradient{ background:linear-gradient(135deg, var(--coral), var(--lilac)); -webkit-background-clip:text; background-clip:text; color:transparent; }
 
 /* ========== NAV ========== */
-.nav{ position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(8px); background:rgba(255,251,249,.7); border-bottom:1px solid rgba(0,0,0,.05); }
+.nav{ position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(8px); background:rgba(255,251,249,.7); border-bottom:1px solid rgba(0,0,0,.05); display: flex;
+    justify-content: space-between; /* 👈 pushes logo left, button right */
+    align-items: center;
+    padding: 0.5rem 2rem; /* adjust for spacing */ }
 .nav__wrap{ display:flex; align-items:center; gap:1rem; padding:.9rem 0; }
 .nav__links{ display:none; gap:1rem; }
 @media (min-width:900px){ .nav__links{ display:flex; } }
