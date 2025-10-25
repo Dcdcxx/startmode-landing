@@ -443,4 +443,58 @@ body{
     .site-logo { height: 32px; }
   }
   
+  /* ==== Founding Partners Section ==== */
+.founding-partners {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #fdfbfa;
+  }
+  
+  .founding-partners .h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+  }
+  
+  .founding-partners .section-intro {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .partner-handle {
+    color: #ff8c78; /* StartMode coral tone */
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .partner-handle:hover {
+    color: #c87af0; /* StartMode lilac accent */
+    transform: scale(1.05);
+  }
+  
+  .cta-text {
+    font-size: 0.95rem;
+    color: #777;
+  }
+  
+  .cta-link {
+    color: #ff8c78;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .cta-link:hover {
+    color: #c87af0;
+  }
   
