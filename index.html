@@ -42,13 +42,14 @@
   </header>
 
   <!-- ========= HERO ========= -->
-  <section class="hero">
+  <!-- ========= HERO ========= -->
+<section class="hero">
     <div class="hero-bg">
       <span class="blob b1"></span>
       <span class="blob b2"></span>
       <span class="blob b3"></span>
     </div>
-
+  
     <div class="container hero__grid">
       <div class="hero__copy">
         <h1 class="h1">
@@ -64,64 +65,83 @@
         </div>
         <p class="micro subtle">No subscriptions. Build in public. Own your outcomes.</p>
       </div>
-
-
-      <section id="how" class="section reveal">
-        <div class="container">
-          <h2 class="h2">How it works</h2>
-          <div class="grid-3">
-            <div class="tile">
-
-
-
-      <!-- Hero visual: vibe cards -->
+  
+      <!-- Hero visual: vibe cards (just visuals that complement the hero) -->
       <div class="hero__visual">
         <!-- Vibe Matrix card -->
         <a href="vibe-match.html" class="card card--wide card--link">
-            <div class="card__title">Vibe Matrix</div>
-          
-            <div class="media-slot">
-              <div class="media-frame">
-                <img src="images/vibe-matrix.png" alt="StartMode Vibe Matrix" class="media-img" />
-              </div>
+          <div class="card__title">Vibe Matrix</div>
+          <div class="media-slot">
+            <div class="media-frame">
+              <img src="images/vibe-matrix.png" alt="StartMode Vibe Matrix" class="media-img" />
             </div>
-          
-            <div class="card__meta">Learn More →</div>
-          </a>
-          
+          </div>
+          <div class="card__meta">Learn More →</div>
+        </a>
   
-  <!-- Match Reveal card -->
-  <div class="card card--wide">
-    <a href="vibe-match.html" class="card card--wide card--link"></a>
-    <div class="card__title">Match Reveal</div>
-  
-    <div class="media-slot">
-      <div class="media-frame">
-        <img src="images/match-reveal.png" alt="StartMode Match Reveal" class="media-img" />
+        <!-- Match Reveal card -->
+        <a href="vibe-match.html" class="card card--wide card--link">
+          <div class="card__title">Match Reveal</div>
+          <div class="media-slot">
+            <div class="media-frame">
+              <img src="images/match-reveal.png" alt="StartMode Match Reveal" class="media-img" />
+            </div>
+          </div>
+          <div class="card__meta">Learn More →</div>
+        </a>
       </div>
     </div>
+  </section>
   
-    <a href="vibe-match.html" class="card__meta link">Learn More →</a>
+  <!-- (optional) wave divider now correctly outside the hero -->
+  <div class="wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,64 C320,128 1120,0 1440,64 L1440,120 L0,120 Z" fill="#fff"></path>
+    </svg>
   </div>
   
-
-  <a href="collaboration-hub.html" class="card card--wide card--link">
-    <div class="card__title">Collaboration Hub</div>
-    <img src="images/hub_hero.png" alt="Collaboration Hub Thumbnail" class="card-img" />
-
-    <div class="card__meta">Learn More →</div>
-  </a>
+  <!-- ========= HOW IT WORKS ========= -->
+  <section id="how" class="section reveal">
+    <div class="container">
+      <h2 class="h2">How it works</h2>
   
-
-    <!-- wave divider -->
-    <div class="wave">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,64 C320,128 1120,0 1440,64 L1440,120 L0,120 Z" fill="#fff"></path>
-      </svg>
+      <div class="grid-3">
+        <!-- Card 1 -->
+        <a href="vibe-match.html" class="card card--wide card--link">
+          <div class="card__title">Vibe Matrix</div>
+          <div class="media-slot">
+            <div class="media-frame">
+              <img src="images/vibe-matrix.png" alt="StartMode Vibe Matrix" class="media-img" />
+            </div>
+          </div>
+          <div class="card__meta">Learn More →</div>
+        </a>
+  
+        <!-- Card 2 -->
+        <a href="vibe-match.html" class="card card--wide card--link">
+          <div class="card__title">Match Reveal</div>
+          <div class="media-slot">
+            <div class="media-frame">
+              <img src="images/match-reveal.png" alt="StartMode Match Reveal" class="media-img" />
+            </div>
+          </div>
+          <div class="card__meta">Learn More →</div>
+        </a>
+  
+        <!-- Card 3 -->
+        <a href="collaboration-hub.html" class="card card--wide card--link">
+          <div class="card__title">Collaboration Hub</div>
+          <div class="media-slot">
+            <div class="media-frame">
+              <img src="images/hub_hero.png" alt="Collaboration Hub Thumbnail" class="media-img" />
+            </div>
+          </div>
+          <div class="card__meta">Learn More →</div>
+        </a>
+      </div>
     </div>
   </section>
-
-  <!-- ========= HOW IT WORKS ========= -->
+  
   
 
 
